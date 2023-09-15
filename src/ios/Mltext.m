@@ -2,6 +2,7 @@
 #import <Photos/Photos.h>
 #import <MLKitVision/MLKitVision.h>
 #import <MLKitTextRecognitionCommon/MLKitTextRecognitionCommon.h>
+#import <MLKitTextRecognitionChinese/MLKitTextRecognitionChinese.h>
 
 @implementation Mltext
 #define NORMFILEURI ((int) 0)
