@@ -77,7 +77,8 @@
             
             if (self.image!=NULL)
             {
-                MLKTextRecognizer *textRecognizer = [MLKTextRecognizer textRecognizer];
+                MLKCommonTextRecognizerOptions *options = [[MLKChineseTextRecognizerOptions alloc] init];
+                MLKTextRecognizer *textRecognizer = [MLKTextRecognizer textRecognizerWithOptions:options];
                 MLKVisionImage *image = [[MLKVisionImage alloc] initWithImage:self.image];
                 [textRecognizer processImage:image
                                   completion:^(MLKText *_Nullable result,

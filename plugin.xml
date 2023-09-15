@@ -68,6 +68,7 @@
       </config>
       <pods use-frameworks="true">
         <pod name="MLKitTextRecognition" />
+        <pod name="MLKitTextRecognitionChinese" />
       </pods>
     </podspec>
 
