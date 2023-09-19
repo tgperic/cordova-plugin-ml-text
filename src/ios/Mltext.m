@@ -1,6 +1,8 @@
 #import "Mltext.h"
 #import <Photos/Photos.h>
 #import <MLKitVision/MLKitVision.h>
+#import <MLKitTextRecognitionCommon/MLKitTextRecognitionCommon.h>
+#import <MLKitTextRecognitionChinese/MLKitTextRecognitionChinese.h>
 
 @implementation Mltext
 #define NORMFILEURI ((int) 0)
@@ -76,7 +78,8 @@
             
             if (self.image!=NULL)
             {
-                MLKTextRecognizer *textRecognizer = [MLKTextRecognizer textRecognizer];
+                MLKCommonTextRecognizerOptions *options = [[MLKChineseTextRecognizerOptions alloc] init];
+                MLKTextRecognizer *textRecognizer = [MLKTextRecognizer textRecognizerWithOptions:options];
                 MLKVisionImage *image = [[MLKVisionImage alloc] initWithImage:self.image];
                 [textRecognizer processImage:image
                                   completion:^(MLKText *_Nullable result,
