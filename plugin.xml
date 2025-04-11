@@ -27,8 +27,8 @@
     <preference name="MLKIT_TEXT_RECOGNITION_PACKAGE" default="com.google.android.gms:play-services-mlkit-text-recognition"/>
     <preference name="MLKIT_TEXT_RECOGNITION_CHINESE_PACKAGE" default="com.google.android.gms:play-services-mlkit-text-recognition-chinese"/>
 
-    <preference name="MLKIT_TEXT_RECOGNITION_VERSION" default="19.0.0"/>
-    <preference name="MLKIT_TEXT_RECOGNITION_CHINESE_VERSION" default="16.0.0"/>
+    <preference name="MLKIT_TEXT_RECOGNITION_VERSION" default="19.0.1"/>
+    <preference name="MLKIT_TEXT_RECOGNITION_CHINESE_VERSION" default="16.0.1"/>
 
     <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
@@ -70,8 +70,8 @@
         <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="MLKitTextRecognition" spec="~> 2.0.0" />
-        <pod name="MLKitTextRecognitionChinese" spec="~> 1.0.0" />
+        <pod name="MLKitTextRecognition" spec="~> 6.0.0" />
+        <pod name="MLKitTextRecognitionChinese" spec="~> 5.0.0" />
       </pods>
     </podspec>
 
