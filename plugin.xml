@@ -70,8 +70,8 @@
         <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="MLKitTextRecognition" spec="~> 6.0.0" />
-        <pod name="MLKitTextRecognitionChinese" spec="~> 5.0.0" />
+        <pod name="MLKitTextRecognition" spec="~> 7.0.0" />
+        <pod name="MLKitTextRecognitionChinese" spec="~> 6.0.0" />
       </pods>
     </podspec>
 
